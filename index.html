@@ -12,6 +12,36 @@
             min-width: max-content;
         }
 
+        a, a:hover, a:visited, a:active {
+            color: inherit;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bolder;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+
+            padding-left: 20px;
+        }
+
         .page-container {
             max-width: 1000px;
             margin: 0 auto;
@@ -40,32 +70,6 @@
             border-style: solid;
             border-width: 2px;
             border-color: #000;
-        }
-
-        h1, h2, h3 {
-            margin-top: 0;
-        }
-
-
-        h1 {
-            font-size: 28px;
-            font-weight: bolder;
-            margin-bottom: 0px;
-        }
-
-        h2 {
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
         }
 
         .divider {
@@ -108,6 +112,13 @@
         .small-logo {
             width: 24px;
             height: 24px;
+            -webkit-transition: transform 1s ease;
+            transition: transform 1s ease;
+        }
+        .small-logo:hover {
+            -webkit-transform: rotate(15deg); /* Градусы поворота можно изменить по необходимости */
+            transform: rotate(15deg); /* Градусы поворота можно изменить по необходимости */
+            filter: invert(0.5) sepia(1) saturate(65) hue-rotate(195deg);;
         }
 
         .experience-item, 
@@ -163,12 +174,11 @@
                 <div class="skill-item high">Compose</div>
                 <div class="skill-item high">Java</div>
                 <div class="skill-item medium">Android SDK</div>
-                <div class="skill-item medium">Kotlin Coroutines</div>
-                <div class="skill-item medium">Git</div>
+                <div class="skill-item medium">Spring</div>
                 <div class="skill-item medium">Gradle</div>
-                <div class="skill-item low">Dagger2</div>
-                <div class="skill-item low">UiAutomator</div>
-                <div class="skill-item low">adb</div>
+                <div class="skill-item medium">OpenApi</div>
+                <div class="skill-item low">Git</div>
+                <div class="skill-item low">SQL</div>
             </div>
 
             <hr class="divider">
@@ -188,9 +198,9 @@
                     <h3>Яндекс - SuperApp «Яндекс»</h3>
                     <p class="date">Октябрь 2023 - Февраль 2024</p>
                     <ul>
-                        <li>“Яндекс Браузер” / “Яндекс”  - поддерживал работу приложения (фиксы багов)</li>
-                        <li>Яндекс Браузер Лайт - полностью перерисовал почти все экраны приложения в рамках редизайна 2023; расширил функционал приложения</li>
-                        <li>Addappter (программа для ритейлеров, предустанавливает и преднастраивает девайсы) - возрождал функциональности Android</li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.yandex.searchapp&hl=ru">“Яндекс Браузер” / “Яндекс”</a> - поддерживал работу приложения (фиксы багов)</li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.yandex.browser.lite&hl=ru">Яндекс Браузер Лайт</a> - полностью перерисовал почти все экраны приложения в рамках редизайна 2023; расширил функционал приложения</li>
+                        <li><a href="https://yandex.ru/support2/addappter-partner/ru">Addappter</a> (программа для ритейлеров, предустанавливает и преднастраивает девайсы) - возрождал функциональности Android</li>
                     </ul>
                 </div>
             </div>
@@ -237,6 +247,11 @@
                     </ul>
                 </div>
             </div>
+
+            <hr class="divider">
+            <h2>Индивидуальные проекты</h2>
+            <p>Их можно увидеть на <a href="https://github.com/Plezha">моём GitHub</a> </p>
+
         </div>
     </div>
 </body>
