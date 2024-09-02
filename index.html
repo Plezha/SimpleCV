@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артём Плеханов</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            padding: 20px;
+            min-width: max-content;
+        }
+
+        .page-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            gap: 30px;
+            padding: 0 15px;
+        }
+
+        .left-column {
+            width: 25%;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .right-column {
+            flex: 1;
+        }
+
+        .profile-picture {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #000;
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+
+
+        h1 {
+            font-size: 28px;
+            font-weight: bolder;
+            margin-bottom: 0px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .divider {
+            border-top: 1px solid #bbb;
+            border-radius: 5px;
+            width: 95%;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #d9ead3;
+            border-radius: 15px;
+            margin-bottom: 4px;
+        }
+        .skill-item.high {
+            background-color: #3e81fc;
+            color: white;
+        }
+        .skill-item.medium {
+            background-color: #CCCCCC;
+        }
+        .skill-item.low {
+            background-color: #f1ebd6;
+        }
+
+        .languages {
+            margin-top: 20px;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .small-logo {
+            width: 24px;
+            height: 24px;
+        }
+
+        .experience-item, 
+        .education-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .experience-item ul,
+        .education-item ul {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        .experience-item li,
+        .education-item li {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 4px;
+        }
+
+        .date {
+            font-style: italic;
+            font-size: 12px;
+            margin: 8px 0 6px 0;
+            color: #666;
+        }
+        .subtitle {
+            font-size: 12px;
+            margin: 8px 0 6px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="left-column">
+            <img src="images/profile_picture.png" alt="Profile Picture" class="profile-picture">
+
+            <h1>Артём Плеханов</h1>
+            <p class="subtitle">Разработчик</p>
+
+            <a href="mailto:plehanovtemka@gmail.com"><img src="images/email.svg" alt="Mail" class="small-logo"></a>
+            <a href="https://t.me/Plezhaa"><img src="images/telegram-app.svg" alt="Telegram" class="small-logo"></a>
+            <a href="https://github.com/Plezha"><img src="images/github-mark.svg" alt="Github" class="small-logo"></a>
+            <a href="pdf/Артём Плеханов.pdf" download><img src="images/pdf-svgrepo-com.svg" alt="PDF" class="small-logo"></a>
+
+            <hr class="divider">
+            <div class="skills">
+                <h2>Навыки</h2>
+                <div class="skill-item high">Kotlin</div>
+                <div class="skill-item high">Compose</div>
+                <div class="skill-item high">Java</div>
+                <div class="skill-item medium">Android SDK</div>
+                <div class="skill-item medium">Kotlin Coroutines</div>
+                <div class="skill-item medium">Git</div>
+                <div class="skill-item medium">Gradle</div>
+                <div class="skill-item low">Dagger2</div>
+                <div class="skill-item low">UiAutomator</div>
+                <div class="skill-item low">adb</div>
+            </div>
+
+            <hr class="divider">
+            <div class="languages">
+                <h2>Языки</h2>
+                <div class="skill-item high">Русский - Родной</div>
+                <div class="skill-item high">Английский - C1 Advanced</div>
+            </div>
+        </div>
+
+
+        <div class="right-column">
+            <h2>Опыт Работы</h2>
+            <div class="experience-item">
+                <img class="logo" src="images/yandex_browser_logo.svg" alt="Yandex Logo">
+                <div class="content">
+                    <h3>Яндекс - SuperApp «Яндекс»</h3>
+                    <p class="date">Октябрь 2023 - Февраль 2024</p>
+                    <ul>
+                        <li>“Яндекс Браузер” / “Яндекс”  - поддерживал работу приложения (фиксы багов)</li>
+                        <li>Яндекс Браузер Лайт - полностью перерисовал почти все экраны приложения в рамках редизайна 2023; расширил функционал приложения</li>
+                        <li>Addappter (программа для ритейлеров, предустанавливает и преднастраивает девайсы) - возрождал функциональности Android</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="divider">
+            <h2>Образование</h2>
+
+            <div class="education-item">
+                <img class="logo" src="images/spbpu_logo.svg" alt="SPbPU logo">
+                <div class="content">
+                    <h3>СПбПУ Петра Великого</h3>
+                    <p class="date">Сентябрь 2022 - Настоящее Время</p>
+                    <ul>
+                        <li>Направление - Информатика и Вычислительная Техника</li>
+                        <li>Алгоритмизация и программирование (Kotlin)</li>
+                        <li>Технологии программирования (Java)</li>
+                        <li>Алгоритмы и структуры данных</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <img class="logo" src="images/yny_logo.svg" alt="YnY logo">
+                <div class="content">
+                    <h3>Школа Мобильной Разработки Яндекса</h3>
+                    <p class="date">Май 2023 - Август 2023</p>
+                    <ul>
+                        <li>Множество лекций по Android-разработке</li>
+                        <li>Приложение - Todo List в рамках закрепления материала лекций</li>
+                        <li>Приложение - дополнение BandLink в команде из офиса под менторством опытных разработчиков</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="education-item">
+                <img class="logo" src="images/education_placeholder_logo.svg" alt="Education placeholder logo">
+                <div class="content">
+                    <h3>Спортивное Программирование в Школе</h3>
+                    <p class="date">2019 - 2022</p>
+                    <ul>
+                        <li>Алгоритмы и структуры данных</li>
+                        <li>Задачи сложности не ниже LeetCode Hard</li>
+                        <li>Победы на олимпиадах регионального уровня</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
